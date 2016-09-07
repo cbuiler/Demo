@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <ImageView
+        android:layout_marginTop="80dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"
+        android:layout_gravity="top|center_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:layout_gravity="bottom">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="bottom|center_horizontal"
+            android:layout_gravity="bottom">
+            <EditText
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_weight="2"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=""
+                android:drawablePadding="20dp"
+                android:drawableLeft="@drawable/login_user_36"
+                android:singleLine="true"
+                android:hint="请输入用户名"
+                android:textSize="18dp"
+                android:textColorHint="@color/colorHint"
+                android:id="@+id/edtUser"
+                android:layout_gravity="right"
+                android:textAlignment="viewStart"
+                android:editable="true"
+                android:background="@drawable/edit_style"
+                android:textColor="@color/white"
+                android:textIsSelectable="false" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="bottom|center_horizontal"
+            android:layout_gravity="bottom">
+
+            <EditText
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_weight="2"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=""
+                android:drawablePadding="20dp"
+                android:drawableLeft="@drawable/login_password_36"
+                android:textColorHint="@color/colorHint"
+                android:singleLine="true"
+                android:hint="请输入用户密码"
+                android:textSize="18dp"
+                android:id="@+id/edtPassword"
+                android:layout_gravity="right"
+                android:textAlignment="viewStart"
+                android:password="true"
+                android:editable="true"
+                android:background="@drawable/edit_style"
+                android:textColor="@color/white" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="bottom|center_horizontal"
+            android:layout_gravity="bottom">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="登录"
+                android:textColor="@color/white"
+                android:id="@+id/btnAuth"
+                android:onClick="onAuthorize"
+                android:textAlignment="center"
+                android:background="@drawable/button_style"
+                android:textSize="18dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="30dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="环欣电子"
+                android:id="@+id/textView2"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="bottom" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

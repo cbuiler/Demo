@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.demo.dj.demo">
+
+    <uses-sdk android:minSdkVersion="11" />
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+
+    <application
+        android:name="com.demo.dj.HuanXin.AppManager"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/MyAppTheme">
+        <service android:name="com.demo.dj.HuanXin.tools.usb.SyncConnectService" >
+            <intent-filter>
+                <action android:name="android.intent.action.HUANXIN_SYNC_CLIENT_START" />
+                <action android:name="android.intent.action.HUANXIN_SYNC_CLIENT_STOP" />
+                <action android:name="android.intent.action.HUANXIN_SYNC_CLIENT_READY" />
+                <action android:name="android.intent.action.HUANXIN_SYNC_CLIENT_RESPONSE" />
+                <action android:name="android.intent.action.HUANXIN_SYNC_END" />
+                <action android:name="android.intent.action.HUANXIN_SYNC_ERROR" />
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            </intent-filter>
+        </service>
+        <activity android:name="com.demo.dj.HuanXin.activitys.FirstActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            android:theme="@android:style/Theme.Light.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.demo.dj.HuanXin.activitys.LoginActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar"></activity>
+        <activity android:name="com.demo.dj.HuanXin.activitys.AnonymousActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar"></activity>
+        <activity android:name="com.demo.dj.HuanXin.activitys.MainActivity"></activity>
+        <activity android:name="com.demo.dj.HuanXin.activitys.PersonnelDetailActivity"></activity><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="20dp"
+    android:gravity="right"
+    android:background="@color/colorBackground">
+
+    <TextView
+        android:id="@+id/menu_water"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:text="@string/menu_water" />
+
+    <View
+        android:layout_width="150dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorBtnBorder"
+        />
+
+    <TextView
+        android:id="@+id/menu_electricity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/menu_electricity"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:layout_marginTop="20dp" />
+
+    <View
+        android:layout_width="150dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorBtnBorder"
+        />
+
+    <TextView
+        android:id="@+id/menu_user_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/menu_user_count"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:layout_marginTop="20dp" />
+
+    <View
+        android:layout_width="150dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorBtnBorder"
+        />
+
+    <TextView
+        android:id="@+id/menu_upload_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/menu_upload_data"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:layout_marginTop="20dp" />
+
+    <View
+        android:layout_width="150dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorBtnBorder"
+        />
+
+    <TextView
+        android:id="@+id/menu_help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/menu_help"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>

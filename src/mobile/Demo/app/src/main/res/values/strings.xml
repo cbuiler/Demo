@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Demo</string>
+
+    <string name="framework_pull_refresh_loosen_refresh">松开刷新</string>
+    <string name="framework_pull_refresh_pull_down_refresh">下拉刷新</string>
+    <string name="framework_pull_refresh_pull_down_last">上次更新</string>
+    <string name="framework_pull_refresh_refreshing">正在刷新...</string>
+    <string name="framework_pull_refresh_loading">正在加载...</string>
+    <string name="framework_pull_refresh_load_more">加载更多</string>
+    <string name="framework_pull_refresh_last_updated">最近更新:%s</string>
+
+    <string name="main_title">已抄用户列表</string>
+    <string name="main_list_search_button">完成</string>
+
+    <string name="personnel_detail_title">详情</string>
+    <string name="personnel_detail_back">返回</string>
+    <string name="personnel_detail_used">用量</string>
+    <string name="personnel_detail_remain">剩余</string>
+    <string name="personnel_detail_price">水费</string>
+    <string name="personnel_detail_go_first">回到第一个</string>
+
+    <string name="menu_water">抄固态记录：水量</string>
+    <string name="menu_electricity">抄固态记录：电量</string>
+    <string name="menu_user_count">抄用户用量</string>
+    <string name="menu_upload_data">数据同步</string>
+    <string name="menu_help">帮助</string>
+
+
+</resources>
